@@ -1,0 +1,23 @@
+
+  <div class="sidebar-fixed position-fixed">
+  
+        <a class="logo-wrapper waves-effect">
+            <img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="">
+        </a>
+      
+        <div class="list-group list-group-flush">
+      
+            <a [routerLink] = "['/proyectos']" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-pie-chart mr-3"></i>Proyectos</a>
+            <a [routerLink] = "['/login']" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-user mr-3"></i>login</a>
+            <a [routerLink] = "['/tareas']" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-table mr-3"></i>Tareas</a>
+
+            <a (click)="salir()" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+                <i class="fa fa-table mr-3"></i>Salir</a>
+        </div>
+      </div> 
+
+
+
