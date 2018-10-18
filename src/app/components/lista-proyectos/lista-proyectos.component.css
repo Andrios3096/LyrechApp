@@ -1,4 +1,10 @@
-
+/* para que se abra delante del modal */
 ::ng-deep .cdk-overlay-container {
     z-index: 1200 !important;
+  }
+  .material-icons{
+    font-size: 1rem; 
+  }
+  .btn .fa{
+    font-size: 1rem; 
   }

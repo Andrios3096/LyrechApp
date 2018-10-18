@@ -16,58 +16,58 @@
                     </button>
 
                 </div>
+
                 <div class="modal-body mx-3">
 
-                    <div class="form-row mb-4">
+              <div class=" mb-4">
 
                       
               <form class="example-form"  novalidate>
-                
-
-                <mat-form-field class="example-full-width">
+                <div class="row">
+                 
+                <mat-form-field class="example-full-width col-6">
                   <input matInput placeholder="Plataforma" required #nombre="ngModel" ngModel name="nombre">
                   <mat-error *ngIf="nombre.errors?.required">
                     Ingrese un nombre
                   </mat-error>
                 </mat-form-field>
+        
 
-                <mat-form-field class="example-full-width ml-5">
+              
+                <mat-form-field class="example-full-width col-6">
                   <input matInput placeholder="Nombre del Proyecto" required #plataforma="ngModel" ngModel name="plataforma">
                   <mat-error *ngIf="plataforma.errors?.required">
                       Ingrese la plataforma a desarrollar 
                   </mat-error>
                 </mat-form-field>
+              
+
                       
-                <div>
-                    <mat-form-field>
-                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+
+                    <mat-form-field class="col-6">
+                        <input matInput [matDatepicker]="picker" placeholder="Fecha de Entrega">
                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker #picker></mat-datepicker>
                       </mat-form-field>
                       
-                      
-                      
-                </div>
-                
-                  
-                
-              
-              </form>
+                    
                     </div>
-    
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-indigo"> Crear <i class="material-icons">
+              </form>
+
+              
+                <div class="modal-footer d-flex justify-content-center ">
+                    <button class="btn btn-indigo"> <span>Crear </span> <i class="material-icons">
                         done_outline</i>
                       </button>
+                
                 </div>
+
             </div>
         </div>
     </div>
-    
+    </div>
+  </div>
 
-
-</div>
 <div class="col-lg-6 col-xl-5 mb-3">
                     
   <!--Card-->
